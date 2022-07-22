@@ -1,0 +1,20 @@
+Part 1
+=============
+py manage.py makemigrations --dry-run --verbosity 3
+py manage.py runserver
+py manage.py createsuperuser 
+pip install coverage
+coverage run --omit='*/venv/*' manage.py test
+coverage html
+pip install djangorestframework
+=============
+Part 3
+pip install djangorestframework-simplejwt
+
+$ curl -X POST -d "email=j@j.com&password=Juanimebe0*" http://localhost:8000/auth/token/
+
+curl -X POST -d "client_id=ZOJVPecPMgMJx62pKl4jfB0UqwGsnOvN4fEjLvyf&client_secret=hDX5g6Wrre8lMO2QkpGSGKDcts7ZGn9GtnZzMM0Z7ZTkV4VbQbTGAgWAXmCfgeCxBSwJC23trWu2VTEdw850EMjYswLKhph2DhHiDZqOGI30E3aKKsO6Sl9yZGv9NT6q&grant_type=password&username=j@j.com&password=Juanimebe0*" http://localhost:8000/auth/token
+
+client id = N52Ide3KadF94WtRnBeOMj6PpLxFm8mtVpOJTfxq
+client secret = sgGWbxDawGhZq7uQW1bN7XRrFVlItAGnVgBPmwfMRjbR22PH62IYbmrZUyPit3LRAxnGT6iTc6IXehAbG40EeLySrfv4WCWpy8V5g7wEOHWA5ENoQ3Efl5RUP31YgYS0
+pip install django-filter
